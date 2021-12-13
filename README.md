@@ -27,3 +27,9 @@ Collect everything the looks like a docker image, e.g. in a `docker-compose.yml`
 ```bash
 cat /etc/docker-compose/* | ./extract-docker-compose-images.sh | ./syft-each.sh  | grep log4j
 ```
+
+## Search most interesting directories
+
+```bash
+DATE=$(date --iso-8601=minutes) DIRS="bin etc home lib lib64 opt root sbin snap srv usr var"; for dir in $DIRS; do echo syft dir:/$dir --file syft-$dir-$DATE.txt; done
+```
