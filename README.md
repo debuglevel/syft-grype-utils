@@ -1,5 +1,11 @@
 # Utils and handy Command Lines for `syft` and `grype`
 
+## Clone this
+
+```bash
+https://github.com/debuglevel/syft-grype-utils.git
+```
+
 ## Install syft and grype
 
 ```bash
